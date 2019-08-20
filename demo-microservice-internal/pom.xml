@@ -7,6 +7,10 @@
     <groupId>com.pimhe</groupId>
     <artifactId>demo.microservice.internal</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -25,10 +29,6 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
 
     <build>
         <plugins>

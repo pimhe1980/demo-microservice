@@ -13,6 +13,7 @@
         <module>demo-microservice-plugin-foo</module>
         <module>demo-microservice-app</module>
         <module>demo-microservice-internal</module>
+        <module>demo-microservice-plugin</module>
     </modules>
 
 </project>
