@@ -5,15 +5,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- *
  * @author pimhe
  */
-@ConditionalOnProperty(name = "ctrl.selector", havingValue = "base")
+@ConditionalOnProperty(name = "cloud", havingValue = "gcp")
 @RestController
-public class Controller {
+public class GCPController {
 
     @RequestMapping("/")
     public String select() {
-        return "Base";
+        return "Google Cloud Platform";
     }
 }

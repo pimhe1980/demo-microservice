@@ -7,14 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author pimhe
  */
-@ConditionalOnConfigCenterProperty(name = "ctrl.selector", havingValue = "foo")
+@ConditionalOnConfigCenterProperty(cloud = "aws", region = "china")
 @RestController
 @RequestMapping("custom")
-public class FooCustomSelectableController {
+public class CustomAWSController {
 
-    @RequestMapping(value = "/")
+    @RequestMapping("/")
     public String select() {
-        return "Foo";
+        return "AWS China.";
     }
-
 }

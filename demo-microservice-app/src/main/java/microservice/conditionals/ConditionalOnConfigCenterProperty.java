@@ -13,7 +13,6 @@ import java.lang.annotation.*;
 @Documented
 @Conditional(OnConfigCenterCondition.class)
 public @interface ConditionalOnConfigCenterProperty {
-    String name();
-
-    String havingValue() default "";
+    String cloud();
+    String region();
 }

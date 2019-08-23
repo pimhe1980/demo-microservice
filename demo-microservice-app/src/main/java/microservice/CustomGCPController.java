@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author pimhe
  */
-@ConditionalOnConfigCenterProperty(name = "ctrl.selector", havingValue = "base")
+@ConditionalOnConfigCenterProperty(cloud = "gcp", region = "global")
 @RestController
 @RequestMapping("custom")
-public class CustomSelectableController {
+public class CustomGCPController {
 
     @RequestMapping("/")
     public String select() {
-        return "Base";
+        return "GCP Global.";
     }
 }

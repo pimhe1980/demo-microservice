@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("param")
-public class ParameterSelectableController {
+public class ParameterController {
 
     @RequestMapping("/")
     public String select() {
