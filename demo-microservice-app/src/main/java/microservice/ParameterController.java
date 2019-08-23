@@ -18,17 +18,17 @@ public class ParameterController {
     }
 
     @RequestMapping(value = "/", headers = "token=1234567890")
-    public String selectByNoneParam() {
+    public String selectByOtherIndustry() {
         return "Parameter: none";
     }
 
-    @RequestMapping(value = "/", headers = "token=1234567890", params = "game=basketball")
-    public String selectByHeaderBasketball() {
+    @RequestMapping(value = "/", headers = "token=1234567890", params = "game=e-retail")
+    public String selectByERetail() {
         return "Parameter: Basketball";
     }
 
-    @RequestMapping(value = "/", headers = "token=1234567890", params = "game=football")
-    public String selectByHeaderFootball() {
+    @RequestMapping(value = "/", headers = "token=1234567890", params = "type=social")
+    public String selectBySocial() {
         return "Parameter: Football";
     }
 }
