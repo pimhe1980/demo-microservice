@@ -1,7 +1,6 @@
 package microsoftwervice.plugin;
 
 import microservice.plugin.BasePlugin;
-import org.springframework.stereotype.Service;
 
 /**
  * @author pimhe
@@ -9,7 +8,7 @@ import org.springframework.stereotype.Service;
 public class FooPlugin implements BasePlugin {
 
     static{
-        System.out.println("Initialing the class FooPlugin.");
+        System.out.println("Initialing Foo Plugin.");
     }
 
     @Override
